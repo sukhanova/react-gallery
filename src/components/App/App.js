@@ -1,9 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
+import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList'
 import GalleryItem from '../GalleryItem/GalleryItem'
 
 class App extends Component {
+
+  componentDidMount() { 
+    this.getPhotos();
+  }
+
+  getPhotos = () => { 
+    axios({
+      method: 'GET',
+      url: '/gallery'
+    })
+      .then((response) => { 
+        console.log(response);
+      })
+      .catch((error) => { 
+        console.log(error);
+      })
+  }
+
   render() {
     return (
       <div className="App">
