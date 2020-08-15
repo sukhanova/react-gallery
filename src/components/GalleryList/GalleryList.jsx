@@ -6,16 +6,11 @@ class GalleryList extends Component {
         
     const photosArray = this.props.photos.map((item, i) => {
         return (
-            <div key={i}>
-                <p><img src={item.path}></img></p>
-            </div>
+            <GalleryItem key={i} photos={item} />
         )
     })  
         return (
             <div>
-            <p>Gallery goes here</p>
-        
-                <GalleryItem />
                 {photosArray}
             </div>
         )

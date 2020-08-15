@@ -4,7 +4,7 @@ class GalleryItem extends Component {
     render() { 
         return (
             <div>
-                <p>GalleryItem!</p>
+                <p><img src={this.props.photos.path}></img></p>
             </div>
         )
     }
