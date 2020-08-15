@@ -34,21 +34,13 @@ class App extends Component {
 
   render() {
 
-    const photosArray = this.state.photos.map((item, i) => { 
-      return (
-        <div key={i}>
-          <p><img src={item.path}></img></p>
-        </div>
-      )
-    })  
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br />
-        {photosArray}
-          <GalleryList />
+        <GalleryList photos={this.state.photos}/>
       </div>
     );
   }
