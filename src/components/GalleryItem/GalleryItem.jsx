@@ -7,7 +7,14 @@ class GalleryItem extends Component {
                 <p><img src={this.props.photo.path} /></p>
                 <p>{this.props.photo.description}</p>
                 <button onClick={(event) => this.props.likePhotoButton(this.props.photo.id)}>I Like It!</button>
-                <p>{this.props.photo.likes}</p>
+                <span>
+                    {this.props.photo.likes === 0 ?
+                        <p>No people love this :(</p>
+                        :
+                        <p>{this.props.photo.likes} people love this!</p>
+                    }
+                </span>
+                
             </div>
         )
     }
