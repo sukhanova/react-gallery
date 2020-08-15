@@ -32,6 +32,9 @@ class App extends Component {
       })
   }
 
+  likePhotoButton = (id) => { 
+    console.log('likePhotoButton clicked!');
+  }
   render() {
 
     return (
@@ -40,7 +43,7 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br />
-        <GalleryList photos={this.state.photos}/>
+        <GalleryList photos={this.state.photos} likePhotoButton={this.likePhotoButton}/>
       </div>
     );
   }
