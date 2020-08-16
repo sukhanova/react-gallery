@@ -1,7 +1,7 @@
 # Gallery of Simpons family life
 
 ## Screen Shots
-![](/public/images/react-gallery-screenshot.png)
+![](public/images/gallery-screenshot.png)
 
 ## Description
 
