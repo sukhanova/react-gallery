@@ -5,6 +5,7 @@ import './GalleryList.css'
 class GalleryList extends Component { 
     render() {
         
+    {/* get each individual photo from the list and pass it to GalleryItem Component as a prop */ } 
     const photosArray = this.props.photos.map((item, i) => {
         return (
             <GalleryItem key={i} photo={item} likePhotoButton={this.props.likePhotoButton} />
