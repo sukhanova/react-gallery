@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GalleryItem from '../GalleryItem/GalleryItem'
+import './GalleryList.css'
 
 class GalleryList extends Component { 
     render() {
@@ -10,7 +11,7 @@ class GalleryList extends Component {
         )
     })  
         return (
-            <div>
+            <div className="photoGallery">
                 {photosArray}
             </div>
         )

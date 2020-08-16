@@ -52,7 +52,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of my life</h1>
+          <h1 className="App-title">Gallery of Simpons family life</h1>
         </header>
         <br />
         <GalleryList photos={this.state.photos} likePhotoButton={this.likePhotoButton}/>
