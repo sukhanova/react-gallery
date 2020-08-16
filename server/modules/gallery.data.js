@@ -12,7 +12,7 @@ const galleryItems = [
     description: "Photo of a Simpson's family playing golf.",
     likes: 123,
   },
-  
+
   {
     id: 4,
     path: "images/snapshot.png",
@@ -29,6 +29,30 @@ const galleryItems = [
     id: 6,
     path: "images/winter.png",
     description: "Photo of snow in a city.",
+    likes: 0,
+  },
+  {
+    id: 7,
+    path: "images/trip.png",
+    description: "Photo of a Simpson's family going to the trip.",
+    likes: 29,
+  },
+  {
+    id: 8,
+    path: "images/dinner.png",
+    description: "Photo of a Simpson's family having a dinner.",
+    likes: 31,
+  },
+  {
+    id: 9,
+    path: "images/tvtime.png",
+    description: "Photo of a Simpson's family watching TV.",
+    likes: 29,
+  },
+  {
+    id: 9,
+    path: "images/hospital.png",
+    description: "Photo of a Simpson's family in a hospital.",
     likes: 0,
   },
 ];
