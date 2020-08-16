@@ -4,3 +4,5 @@ CREATE TABLE "images" (
 	"description" VARCHAR(256),
 	"likes" INTEGER DEFAULT 0
 	);
+
+    
