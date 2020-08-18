@@ -38,8 +38,10 @@ class App extends Component {
       });
   };
 
-  likePhotoButton = (id) => {
-    console.log("likePhotoButton clicked!");
+  likePhotoButton = (photo) => {
+    //console.log("likePhotoButton clicked!");
+    let id = photo.id
+    console.log(id);
     axios({
       method: "PUT",
       url: "gallery/like/{id}",
