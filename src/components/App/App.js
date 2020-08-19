@@ -44,7 +44,7 @@ class App extends Component {
     console.log(id);
     axios({
       method: "PUT",
-      url: "gallery/like/{id}",
+      url: `gallery/like/${id}`,
     })
       .then((response) => {
         console.log(response);
